@@ -9,5 +9,43 @@
     }
   ],
   "frontMatter.content.fmHighlight": true,
-  "frontMatter.preview.host": "http://localhost:8080/blog"
+  "frontMatter.preview.host": "http://localhost:8080/blog",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "subtext",
+          "name": "subtext",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "coverimage",
+          "name": "coverimage",
+          "type": "string"
+        },
+        {
+          "title": "coverimagealt",
+          "name": "coverimagealt",
+          "type": "string"
+        }
+      ]
+    }
+  ]
 }
