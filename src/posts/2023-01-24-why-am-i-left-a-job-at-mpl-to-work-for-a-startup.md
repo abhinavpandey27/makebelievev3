@@ -1,13 +1,10 @@
 ---
-title: Learnings from MPL
-subtext: My first long term high stakes job
-date: 2022-12-31
-tags:
-  - Resources
-coverimage: /img/work/fantasy-pro/fantasy-numbers.png
-coverimagealt: Fantasy Numbers
+title: Why am I left a job at MPL to work for a Startup?
+subtext: Writing on why you should too!
+date: 2023-01-19T18:30:00.000Z
+coverimage: ""
+coverimagealt: ""
 ---
-
 
 
 First of all here is the thing I made:
