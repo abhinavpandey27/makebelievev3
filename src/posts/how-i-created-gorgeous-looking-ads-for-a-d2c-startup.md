@@ -7,7 +7,6 @@ tags:
   - Resources
 coverimage: /img/spotify-apple-1500x.png
 coverimagealt: test alt
-slug: created-gorgeous-ads-d2c-startup
 ---
 
 
