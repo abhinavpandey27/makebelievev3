@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <!--Meta Info + Adding Title-->
+    <title>{{ metaTitle | safe }}</title>
+    <meta name="title" content="{{ metaTitle | safe }} — {{ metaDescription | safe }}">
+    <meta name="description" content="{{ metaDescription | safe }}">
+    <meta name="robots" content="follow, index" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="generator" content="Eleventy" />
+  
+    <!--Asset Versioning-->
+    <link rel="stylesheet" href="/{{ hash['css/styles.css'] }}"/>
+    <script defer src="/{{ hash['js/scripts.js'] }}"></script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | url }}">
+    <meta property="og:title" content="{{ metaTitle | safe }}">
+    <meta property="og:description" content="{{ metaDescription | safe }}">
+    <meta property="og:image" content="img/abhinav@0.3x.jpg">
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | url }}">
+    <meta property="twitter:title" content="{{ metaTitle | safe }}">
+    <meta property="twitter:description" content="{{ metaDescription | safe }}">
+    <meta property="twitter:image" content="img/abhinav@0.3x.jpg">
+
+
+
+        <!-- Preconnect to the font file origin -->
+    <link
+      rel="preconnect"
+      href="https://rsms.me"
+      crossorigin
+    />
+
+    <!-- Preload the font stylesheet asynchronously with low priority -->
+    <link
+      rel="preload"
+      href="https://rsms.me/inter/inter.css"
+      as="style"
+    />
+
+    <!-- https://www.filamentgroup.com/lab/load-css-simpler/ -->
+    <link
+      crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://rsms.me/inter/inter.css"
+      media="print"
+      onload="this.media='all'; this.onload=null;"
+    />
+
+    <link rel="stylesheet" href="/styles/index.css" />
+    {% block head %}{% endblock %}
+  </head>
+  <body class="smoothed font-inter dark:bg-bgblue-dark bg-bggray">
+
+
+
+
+
+    {% block content %}
+      {{ content | safe }}
+    {% endblock %}
+    {% include "partials/site-footer.njk" %}
+
+
+
+  </body>
+</html>

@@ -1,0 +1,89 @@
+    
+    
+    
+    
+<div class="grid grid-cols-12 divide-x divide-gray-200 dark:divide-gray-700 pt-2 md:pt-8">
+
+
+    <div class="col-span-12">
+
+        <div class="grid grid-cols-12 gap-2 md:gap-12 md:w-full">
+
+            {% for item in postListItems %}
+
+            <div class="col-span-12 lg:col-span-6 xl:col-span-4 h-auto mb-4 md:mb-0 lg:h-128">
+
+                
+             
+                
+                
+                <div class="pb-1">
+                    
+                    <a href="{{ item.url }}" class="pb-2 pt-2">
+                    <div class=" rounded-sm overflow-hidden">
+                        <img
+                        src="{{ item.data.coverimage }}"
+                        alt="{{ item.data.coverimagealt }}"
+                        loading="lazy"
+                        class="object-cover aspect-[16/9] md:aspect-[4/3] hover:opacity-90 transition-opacity dark:hover:opacity-80"
+                        />
+                    </div>
+
+                    </a>
+                </div>
+
+
+
+                <div class="flex flex-row space-x-1 pt-4 pb-2">
+
+                    <div class="">
+                        <p class=" text-[12px] uppercase tracking-wide md:text-sm text-gray-400 dark:text-gray-400 font-bold font-inter" > {{ item.date | readableDate }} </p>
+                        
+                    </div>
+
+                    <div class="">
+                        <p class="text-sm  font-OpenSauceSans font-bold text-gray-400 dark:text-gray-400">/</p>
+                    </div>
+
+                    <div class="flex flex-row space-x-1">
+                        {% for tag in item.data.tags | filterTagList %}
+
+                        {%- if collections.tagList.indexOf(tag) != -1 -%}
+                            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+                            <a href="{{ tagUrl | url }}" class="text-sm font-OpenSauceSans text-gray-400 hover:text-fred hover:font-italic dark:hover:text-fgreen dark:text-gray-300">{{ tag }}</a>
+                            {% if loop.length - loop.index == 1 %} <p class="text-sm  font-OpenSauceSans text-gray-400 dark:text-gray-300">•</p> {% endif %}
+                            {%- if loop.length - loop.index > 1 %}   {% endif -%}
+                        {%- endif -%}
+
+                        {% endfor %}
+                    </div>
+                    
+                    
+
+                </div>
+
+
+
+                <div class="pb-1 md:pb-2 ">
+                    <a href="{{ item.url }}" class=" pt-2 md:hover:border-b hover:border-opacity-40 md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-gray-800 dark:text-gray-100 hover:text-fred dark:hover:text-fgreen text-2xl lg:text-2xl">{{ item.data.title }}</a>
+                </div>
+                <div class="">
+                    <p class="pb-2 pt-2 text-l  font-inter text-gray-700 dark:text-gray-200">{{ item.data.subtext }}</p>
+                </div>
+
+                <div class="h-vsm w-full bg-gray-200 dark:bg-gray-700 mt-4 md:hidden"></div> 
+
+            </div>
+            
+            {% endfor %}
+            
+        </div>
+
+    </div>
+
+
+
+     
+
+    
+</div>

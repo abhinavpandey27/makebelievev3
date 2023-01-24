@@ -1,0 +1,38 @@
+  <div class="col-span-12 md:col-span-4 xl:col-span-4 group">
+
+    <div class="">
+    
+      <a
+        href="{{ item.url }}"
+        aria-label="See {{ item.data.title }}"
+        class=""
+      >
+
+
+          <div class="flex-shrink-0 rounded-sm overflow-hidden">
+          <img
+          src="{{ item.data.hero.image }}"
+          alt="{{ item.data.hero.imageAlt }}"
+          loading="lazy"
+          class="h-full object-cover aspect-[1/1.04] hover:opacity-90 dark:hover:opacity-80"
+          />
+          </div>
+
+         <h3 class="text-xl md:text-2xl text-gray-800 dark:text-gray-100 font-bold font-OpenSauceSans tracking-tight pt-8 pb-2 group-hover:opacity-60"> {{ item.data.title }} </h3>
+          <div class="">
+          <p class=" text-base  font-OpenSauceSans text-gray-700 dark:text-gray-200 pb-4 group-hover:opacity-60">{{ item.data.description }}</p>
+          </div>
+
+         <!-- <a href="{{ item.url }}"
+          aria-label="See {{ item.data.title }}" class=" pt-2 text-base border-b border-b-gray-300 dark:border-b-gray-700  md:hover:border-b hover:border-opacity-40 
+          md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-fred dark:text-fgreen hover:text-fred dark:hover:text-fgreen md:text-base">
+          View Case Study
+          </a> -->
+
+
+
+
+      </a>
+
+    </div>  
+    </div>

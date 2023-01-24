@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+---
+
+    {% include "partials/site-head.njk" %}
+
+
+    {% include "partials/hero-section.njk" %}
+  
+
+  <div class="max-w-8xl mx-auto h-auto py-4 md:py-4 px-4 lg:px-12 xl:px-12 2xl:px-2">
+
+
+{#
+  {% include "partials/work-header.njk" %}
+
+  {% block featuredWork %}
+    {% include 'partials/featured-work.njk' %}
+  {% endblock featuredWork %}
+
+#}
+
+  
+
+{#
+  {% include "partials/writing-header.njk" %}
+
+#}
+
+  {% set postListItems = pagination.items %}
+
+    {% block content %}
+    <article>
+      {% include "partials/post-list-no-tags.njk" %}
+    </article>
+  {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>

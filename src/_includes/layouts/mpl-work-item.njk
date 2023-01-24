@@ -1,0 +1,289 @@
+---
+layout: layouts/base.njk
+templateEngineOverride: njk
+
+---
+
+    {% include "partials/site-head.njk" %}
+
+
+
+<div class="w-full max-w-full mx-auto my-auto">
+    <div class="h-vsm w-full bg-gray-300 dark:bg-gray-500"></div>
+
+    <div class="max-w-full mx-auto h-auto py-4 md:py-4 px-5 lg:px-12 xl:px-12 2xl:px-2 bg-bggray-dark dark:bg-bgblue">
+
+        <div class="max-w-8xl mx-auto h-auto py-4 px-2">
+
+            <div class="pt-4 md:pt-4 lg:pt-12">
+
+            <h1 class="text-fred dark:text-fgreen text-4xl lg:text-6xl font-OpenSauceSans font-bold tracking-tighter max-w-4xl leading-tight"> {{ displaytitle }} </h1>
+
+
+            </div>
+
+
+
+            <div class="pb-4 md:pb-4 lg:pb-12 text-gray-800 dark:text-gray-100 text-lg md:text-xl lg:text-2xl font-semibold pt-4 md:pt-4 lg:pt-8 max-w-4xl tracking-tight font-OpenSauceSans">
+            
+            {% if description %}
+                <p> {{ description }} </p>
+                
+            {% endif %}
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+        <div class="max-w-8xl mx-auto h-auto py-4 px-5 md:px-2">
+
+   
+        
+
+            {% if section1 %}
+        
+                    {% if section1.subheading1 %}
+                        {% set featuresubheading  %}{{ section1.subheading1 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/introduction.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12 ">
+                            
+                            <img
+                            src="/img/work/fantasy-pro/fantasy-numbers.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[1000/417] pb-8 rounded-sm overflow-hidden"
+                            />
+                            <video class="aspect-square w-full" controls>
+                            <source src="/img/work/fantasy-pro/fantasy-flow.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                            </video>
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+                    <div class="h-vsm w-full bg-gray-300 dark:bg-gray-500"></div>
+
+
+                    {% if section1.subheading2 %}
+                        {% set featuresubheading  %}{{ section1.subheading2 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/fantasy-constructs-flow.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="{{ hero.image }}"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+
+                    </div>
+
+
+                    {% if section1.subheading3 %}
+                        {% set featuresubheading  %}{{ section1.subheading3 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/feature-definiton.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="{{ hero.image }}"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+
+                    {% if section1.subheading4 %}
+                        {% set featuresubheading  %}{{ section1.subheading4 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/my-role.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="{{ hero.image }}"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+
+                    {% if section1.subheading5 %}
+                        {% set featuresubheading  %}{{ section1.subheading5 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/challenges-faced.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="{{ hero.image }}"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+
+                    {% if section1.subheading6 %}
+                        {% set featuresubheading  %}{{ section1.subheading6 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/new-flow.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="{{ hero.image }}"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+                    {% if section1.subheading7 %}
+                        {% set featuresubheading  %}{{ section1.subheading7 }}{% endset %}
+                            {% include "partials/case-study-partials/feature-subheading.njk" %}   
+                    {% endif %}
+
+                    <div class="grid grid-cols-18 gap-0 md:gap-10 lg:pt-4">
+
+                    
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/leaderboard-l.md" %}  </div>
+                        </div>
+
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/leaderboard-r.md" %}  </div>
+                        </div>
+
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-18 lg:col-span-6">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/leaderboard-item.md" %}  </div>
+                        </div>
+
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-18 lg:col-span-18 rounded-xl overflow-hidden">
+                            <iframe class="w-full aspect-video" src="https://player.vimeo.com/video/682457016?h=5e57bede71&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Leaderboard Variations"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                        </div>
+
+
+                        <div class="prose max-w-none dark:prose-dark col-span-18 md:col-span-9 lg:col-span-6 h-screen sticky top-0">
+                            <div> {% renderFile "./src/mpl-components-info/fantasy-pro/leaderboard-exploration.md" %}  </div>
+                        </div>
+
+                        <div class="flex-shrink-0 mt-5 col-span-18 md:col-span-9 lg:col-span-12">
+                            <img
+                            src="/img/work/fantasy-pro/component-construction.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[912/357] rounded-sm overflow-hidden"
+                            />
+                            <img
+                            src="/img/work/fantasy-pro/parameters-of-variation.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[912/730] pt-8 rounded-sm overflow-hidden"
+                            />
+                            <img
+                            src="/img/work/fantasy-pro/exploration-1.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[1166/1552] pt-8 rounded-sm overflow-hidden"
+                            />
+                            <img
+                            src="/img/work/fantasy-pro/iterations-on-exploration-1.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[1166/687] pt-8 rounded-sm overflow-hidden"
+                            />
+                            <img
+                            src="/img/work/fantasy-pro/problems-with-inital-explorations.png"
+                            alt="{{ item.data.hero.imageAlt }}"
+                            loading="lazy"
+                            class="w-full aspect-[1166/2075] pt-8 rounded-sm overflow-hidden"
+                            />
+                            <p class="text-sm  pt-4 pl-2 text-gray-800 dark:text-gray-200 font-OpenSauceSans"> Basic concept of Fantasy involves a lot of contructs but is now a widely known game concept in India </p>
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+
+
+
+            
+            {% endif %}
+
+         </div>
+
+
+
+</div>
+
+

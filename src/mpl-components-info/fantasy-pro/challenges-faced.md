@@ -1,0 +1,6 @@
+1. **Strict Deadline:** We were on a strict deadline. Fantasy Sports throughout the ecosystem witness the highest amount of engagement during Indian Premier League (IPL), India's own T20 tournament. Hence the plan was to develop and ship the feature before the IPL for maximum output.
+2. **Cross Functional Dependencies:** The whole construct of buying and selling is deeply complex from cross functional perspectives
+    * **Legal:** Legal team had to ensure that the product was compliant of all the laws concerning 
+    * **Engineering:** The buying and selling of the teams would happen as the match is live. Meaning the database query fetching and conflict resolving should happen at a really quick speed. Hence several trade-offs had to happen so that the product could be shipped in a timely manner.
+
+Therefore, the interaction/user experience envisioned was changing/updating continuously to ensure agreement from all the functions. For example: Team filters, a sub-feature that would allow users to filter out teams to buy, underwent massive changes in the scope. Hence during that time, rather than being reactive and changing designs with every change in the spec, we were proactive and were creating designs for each tier of complexity. This was a big challenge. 

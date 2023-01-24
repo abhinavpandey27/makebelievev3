@@ -1,0 +1,68 @@
+<div class="grid grid-cols-12 gap-8">
+
+
+
+
+
+  
+  {% for item in collections.featuredWork %}
+  {% if item.data.displayOrder == 1 %}
+
+  {% include "partials/double-column-work.njk" %}
+
+  {% endif %}
+
+
+  {% if item.data.displayOrder == 2 %}
+
+  {% include "partials/single-column-work.njk" %}
+ 
+  {% endif %}
+
+
+  {% if item.data.displayOrder == 3 %}
+
+  {% include "partials/single-column-work.njk" %}
+ 
+  {% endif %}
+
+  {% if item.data.displayOrder == 4 %}
+
+  {% include "partials/double-column-work.njk" %}
+ 
+  {% endif %}
+
+  {% if item.data.displayOrder == 5 %}
+
+  {% include "partials/double-column-work.njk" %}
+ 
+  {% endif %}
+
+  {% if item.data.displayOrder == 6 %}
+
+  {% include "partials/single-column-work.njk" %}
+
+  {% endif %}
+
+  {% if item.data.displayOrder == 7 %}
+
+  {% include "partials/single-column-work.njk" %}
+
+  {% endif %}
+
+  {% if item.data.displayOrder == 8 %}
+
+  {% include "partials/double-column-work.njk" %}
+ 
+  {% endif %}
+
+
+
+
+
+{% endfor %}
+
+</div>
+  
+
+

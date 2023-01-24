@@ -1,0 +1,5 @@
+{
+	"templateEngineOverride": "njk,md",
+	"permalink": "/work/{{ title | slug }}/index.html",
+	"tags": ["Work"]
+}

@@ -1,0 +1,116 @@
+<div class="h-vsm w-full bg-gray-300 dark:bg-gray-600 mt-20"></div>
+
+
+<div class="w-full pt-8 max-w-full mx-auto my-auto bg-bggray-dark dark:bg-bgblue">
+
+    <div class="max-w-8xl mx-auto h-auto py-4 md:py-8 px-4 lg:px-12 xl:px-12 2xl:px-2">
+
+        <div class="">
+
+            <footer class="grid grid-cols-12 max-w-8xl mx-auto gap-8">
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 my-4" >
+
+                    <p class="text-[12px] uppercase tracking-wide md:text-sm text-gray-500 dark:text-gray-400 font-bold font-inter pb-4" > Navigate to </p>
+
+                    {% set navPages = collections.all | eleventyNavigation %}
+                    <div class="space-y-2 pt-2 md:space-y-4">
+                    {% for entry in navPages %}
+
+
+                    <div>
+                    <a href="{{ entry.url | url }}" class=" pt-2 text-xl border-b border-b-gray-300 dark:border-b-gray-700  md:hover:border-b hover:border-opacity-40 
+                    md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-gray-600 dark:text-gray-300 hover:text-fred dark:hover:text-fgreen md:text-xl">
+                    {{ entry.title }}
+                    </a>
+                    </div>
+                    
+                    {% endfor %}
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-2 my-4 ">
+
+                <p class="text-[12px] uppercase tracking-wide md:text-sm text-gray-500 dark:text-gray-400 font-bold font-inter pb-4" > Elsewhere </p>
+
+
+
+
+                <div class="space-y-2 pt-2 md:space-y-4">
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/abhinav-pandey-nit/" class=" pt-2 text-xl border-b border-b-gray-300 dark:border-b-gray-700  md:hover:border-b hover:border-opacity-40 
+                        md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-gray-600 dark:text-gray-300 hover:text-fred dark:hover:text-fgreen md:text-xl">
+                        LinkedIn
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://twitter.com/ab27hi" class=" pt-2 text-xl border-b border-b-gray-300 dark:border-b-gray-700  md:hover:border-b hover:border-opacity-40 
+                        md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-gray-600 dark:text-gray-300 hover:text-fred dark:hover:text-fgreen md:text-xl">
+                        Twitter
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://dribbble.com/abhinavpandey" class=" pt-2 text-xl border-b border-b-gray-300 dark:border-b-gray-700  md:hover:border-b hover:border-opacity-40 
+                        md:hover:border-b-fred md:dark:hover:border-b-fgreen font-bold tracking-tight font-OpenSauceSans text-gray-600 dark:text-gray-300 hover:text-fred dark:hover:text-fgreen md:text-xl">
+                        Dribble
+                        </a>
+                    </div>
+
+                </div>
+
+
+                
+
+                
+
+                </div>
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 my-4 ">
+
+
+
+
+
+                <p class="w-[200px] text-[12px] uppercase tracking-wide md:text-sm text-gray-500 dark:text-gray-400 font-bold font-inter pb-4" > Tools used </p>
+
+                <article class="prose max-w-none dark:prose-dark leading-6 font-OpenSauceSans">
+                Eleventy (Static Site Generator), 
+                TailwindCSS (CSS Framework), Figma (Design Tool used for Ideation and all things design), VSCode (Code Editor), Github (For keeping the code on internet). 
+                </article>
+                
+
+
+                </div>
+
+
+                <div class="col-span-12 md:col-span-6 lg:col-span-4 my-4 ">
+
+                <p class="w-[200px] text-[12px] uppercase tracking-wide md:text-sm text-gray-500 dark:text-gray-400 font-bold font-inter pb-4" > Typeset in </p>
+
+                <article class="prose max-w-none dark:prose-dark leading-6 font-OpenSauceSans">
+                Fonts used OpenSauceSans by Creative Sauce and Inter by Rasmus Anderson. 
+                </article>
+
+                </div>                
+
+
+            </footer>
+
+
+        </div>
+
+    </div>    
+
+    <div class="max-w-full mt-20 mx-auto h-1 md:h-1 bg-fred dark:bg-fgreen"></div>
+
+</div>   
+
+
+
+
